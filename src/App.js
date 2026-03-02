@@ -6,7 +6,7 @@ export default function App() {
   const [weather, setWeather] = useState(null);
 
   useEffect(() => {
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=demo&units=metric`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b64e211f243d2719c2608e8ba355e5d6&units=metric`)
       .then(res => setWeather(res.data))
       .catch(() => setWeather(null));
   }, [city]);
