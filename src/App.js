@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
 
 export default function App() {
   const [city, setCity] = useState("Berlin");
