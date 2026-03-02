@@ -1,25 +1,29 @@
-# 🌤️ Weather App (React + OpenWeather API)
+# 🌤️ Weather App (React + Open-Meteo API)
 
-A simple React application that fetches real-time weather data using the OpenWeather API.
+A simple React application that fetches real-time weather data without requiring an API key.
 
-## Features
+## 🚀 Live Demo
+https://weather-app-1xog.vercel.app/
+
+## ✨ Features
 - Search weather by city name
-- Displays temperature and weather condition
+- Displays temperature and wind speed
 - Uses Axios for API requests
-- Responsive and clean UI
+- Clean and modern UI
+- No API key required
 
-## Setup Instructions
+## 🛠️ Technologies Used
+- React
+- Axios
+- Open-Meteo API
+- CSS
 
-1. **Install dependencies**
-   ```bash
+## 📦 Setup Instructions
+
+1. Install dependencies
    npm install
-2. **Run the Project**
+
+2. Run the project
    npm start
-The app will be available at http://localhost:3000
- in your browser.
 
-**Notes**
-
-Replace appid=demo in App.js with your own OpenWeather API key: OpenWeather API
-
-Built using React functional components and hooks.
+The app will be available at http://localhost:3000 in your browser.
