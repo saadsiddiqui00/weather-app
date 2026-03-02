@@ -4,6 +4,8 @@ A simple React application that fetches real-time weather data without requiring
 
 ## 🚀 Live Demo
 https://weather-app-1xog.vercel.app/
+## Screenshot
+![Weather Screenshot](weather-screenshot.png)
 
 ## ✨ Features
 - Search weather by city name
