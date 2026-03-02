@@ -49,21 +49,32 @@ export default function App() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>🌤️ Weather App</h2>
+    <div className="container">
+      <div className="card">
+        <h2 className="title">🌤️ Weather App</h2>
 
-      <input value={city} onChange={(e) => setCity(e.target.value)} />
-      <button onClick={fetchWeather} style={{ marginLeft: "8px" }}>
-        Search
-      </button>
+        <div className="row">
+          <input
+            className="input"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            placeholder="Enter city name"
+          />
+          <button className="btn" onClick={fetchWeather}>
+            Search
+          </button>
+        </div>
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
+        {error && <p className="error">{error}</p>}
 
-      {weather && (
-        <p>
-          {weather.place}: {weather.temp}°C, Wind {weather.wind} km/h
-        </p>
-      )}
+        {weather && (
+          <p className="result">
+            <b>{weather.place}</b>: {weather.temp}°C, Wind {weather.wind} km/h
+          </p>
+        )}
+
+        <p className="mini">Tip: Try “Berlin”, “Ilmenau”, “Karachi”.</p>
+      </div>
     </div>
   );
 }
